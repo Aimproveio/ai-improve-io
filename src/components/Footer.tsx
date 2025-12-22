@@ -12,11 +12,11 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-[hsl(210,100%,60%)] flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">AI</span>
               </div>
-              <span className="text-xl font-bold">ConvertAI</span>
+              <span className="text-xl font-bold">AImprove</span>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
-              Wir helfen E-Commerce Unternehmen, ihre Conversion Rate durch 
-              datengetriebene KI-Lösungen signifikant zu steigern.
+              Wir helfen Amazon Sellern, ihre Performance durch 
+              KI-gestützte Automatisierung und Optimierung signifikant zu steigern.
             </p>
             <div className="flex gap-4">
               <a
@@ -57,7 +57,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                info@convertai.de
+                info@aimprove.de
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2024 ConvertAI. Alle Rechte vorbehalten.
+            © 2024 AImprove. Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">

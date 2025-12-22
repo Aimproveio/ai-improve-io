@@ -3,21 +3,21 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Michael Weber",
-    role: "CEO, FashionStore24",
-    content: "Innerhalb von 3 Monaten haben wir unsere Conversion Rate um 47% gesteigert. Die KI-Analysen haben uns gezeigt, wo wir Geld auf dem Tisch liegen lassen.",
+    name: "Marcus Hofmann",
+    role: "Amazon FBA Seller, 7-stellig",
+    content: "Mit AImprove haben wir unsere Listing-Erstellung von 2 Tagen auf 2 Stunden reduziert. Die KI-generierten Creatives performen besser als alles, was wir vorher hatten.",
     rating: 5,
   },
   {
-    name: "Sarah Müller",
-    role: "Head of E-Commerce, TechGadgets",
-    content: "Die automatisierten A/B-Tests sparen uns unglaublich viel Zeit. Und das Beste: Die Ergebnisse sind messbar besser als bei unseren manuellen Tests.",
+    name: "Lisa Bergmann",
+    role: "E-Commerce Managerin, SportBrand",
+    content: "Die PPC Intelligence Reports haben uns geholfen, unseren ACoS um 40% zu senken. Endlich verstehen wir, wo unser Budget wirklich hingeht.",
     rating: 5,
   },
   {
-    name: "Thomas Schneider",
-    role: "Gründer, NaturKosmetik.de",
-    content: "Endlich ein Partner, der E-Commerce wirklich versteht. Die personalisierten Produktempfehlungen haben unseren Durchschnittswarenkorb verdoppelt.",
+    name: "Thomas Keller",
+    role: "Gründer, HomeEssentials",
+    content: "Die UGC Simulation Pipeline ist ein Gamechanger. Wir haben jetzt unbegrenzt authentische Video-Testimonials ohne Influencer-Kosten.",
     rating: 5,
   },
 ];
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
             Kundenstimmen
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Was unsere Kunden sagen
+            Was Amazon Seller sagen
           </h2>
         </motion.div>
 

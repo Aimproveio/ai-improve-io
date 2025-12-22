@@ -1,30 +1,30 @@
 import { motion } from "framer-motion";
-import { Search, Lightbulb, Rocket, BarChart } from "lucide-react";
+import { Search, Settings, Rocket, TrendingUp } from "lucide-react";
 
 const steps = [
   {
     icon: Search,
     number: "01",
     title: "Analyse",
-    description: "Wir analysieren Ihren Shop, Ihre Zielgruppe und identifizieren Optimierungspotenziale mit unserer KI.",
+    description: "Wir analysieren Ihre Amazon-Präsenz, Konkurrenz und identifizieren Optimierungspotenziale mit unserer KI.",
   },
   {
-    icon: Lightbulb,
+    icon: Settings,
     number: "02",
-    title: "Strategie",
-    description: "Basierend auf den Daten entwickeln wir eine maßgeschneiderte Optimierungsstrategie für Ihren Shop.",
+    title: "Setup",
+    description: "Wir richten alle KI-Tools ein und integrieren sie nahtlos in Ihre bestehenden Workflows.",
   },
   {
     icon: Rocket,
     number: "03",
-    title: "Implementierung",
-    description: "Wir setzen die Optimierungen um und integrieren unsere KI-Tools nahtlos in Ihren Shop.",
+    title: "Launch",
+    description: "Automatisierte Creative-Produktion, Listing-Optimierung und PPC-Intelligence starten.",
   },
   {
-    icon: BarChart,
+    icon: TrendingUp,
     number: "04",
-    title: "Optimierung",
-    description: "Kontinuierliche Verbesserung durch Echtzeit-Datenanalyse und automatische Anpassungen.",
+    title: "Skalierung",
+    description: "Kontinuierliche Optimierung durch KI-gesteuerte Datenanalyse und automatische Anpassungen.",
   },
 ];
 

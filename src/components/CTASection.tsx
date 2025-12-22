@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 const benefits = [
-  "Kostenlose Shop-Analyse",
+  "Kostenlose Potenzialanalyse",
   "Unverbindliches Strategiegespräch",
-  "Sofort umsetzbare Tipps",
-  "Garantierte Ergebnisse",
+  "Konkrete Handlungsempfehlungen",
+  "ROI-Garantie",
 ];
 
 const CTASection = () => {
@@ -32,12 +32,12 @@ const CTASection = () => {
 
             <div className="relative z-10 text-center">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                Bereit, Ihren Umsatz zu{" "}
-                <span className="gradient-text">steigern?</span>
+                Bereit, Ihr Amazon Business zu{" "}
+                <span className="gradient-text">skalieren?</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
-                Vereinbaren Sie jetzt Ihre kostenlose Shop-Analyse und erfahren Sie, 
-                wie viel Umsatzpotenzial in Ihrem Shop steckt.
+                Vereinbaren Sie jetzt Ihre kostenlose Potenzialanalyse und erfahren Sie, 
+                wie viel Wachstumspotenzial in Ihrem Amazon-Geschäft steckt.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-10">
@@ -58,7 +58,7 @@ const CTASection = () => {
               </Button>
 
               <p className="mt-6 text-xs text-muted-foreground">
-                Keine Kreditkarte erforderlich • Antwort innerhalb von 24 Stunden
+                Keine Verpflichtungen • Antwort innerhalb von 24 Stunden
               </p>
             </div>
           </div>

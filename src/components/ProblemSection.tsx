@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
-import { AlertTriangle, TrendingDown, Users, Clock } from "lucide-react";
+import { AlertTriangle, TrendingDown, Clock, DollarSign } from "lucide-react";
 
 const problems = [
   {
     icon: TrendingDown,
-    title: "Niedrige Conversion Rate",
-    description: "Besucher verlassen Ihren Shop ohne zu kaufen. Sie wissen nicht warum.",
-  },
-  {
-    icon: Users,
-    title: "Hohe Absprungrate",
-    description: "Potenzielle Kunden brechen den Checkout ab und kommen nie zurück.",
+    title: "Sinkende Sichtbarkeit",
+    description: "Ihre Listings verschwinden in den Suchergebnissen während die Konkurrenz wächst.",
   },
   {
     icon: Clock,
-    title: "Zeitaufwändige Tests",
-    description: "A/B-Tests dauern Wochen und liefern oft keine klaren Ergebnisse.",
+    title: "Zeitfressende manuelle Arbeit",
+    description: "Listings pflegen, Creatives erstellen, PPC optimieren – alles frisst Ihre Zeit.",
+  },
+  {
+    icon: DollarSign,
+    title: "Hohe Werbekosten (ACoS)",
+    description: "Ihr PPC-Budget verbrennt ohne messbare Ergebnisse und klare Strategie.",
   },
   {
     icon: AlertTriangle,
-    title: "Verlorener Umsatz",
-    description: "Jeden Tag gehen Ihnen potenzielle Verkäufe durch Optimierungslücken verloren.",
+    title: "Verpasste Chancen",
+    description: "Ohne datengetriebene Entscheidungen verschenken Sie täglich Umsatzpotenzial.",
   },
 ];
 
@@ -42,8 +42,8 @@ const ProblemSection = () => {
             Kennen Sie diese Herausforderungen?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Die meisten E-Commerce Shops verschenken täglich Umsatz durch unoptimierte 
-            Prozesse und mangelnde Datenanalyse.
+            Die meisten Amazon Seller kämpfen täglich mit denselben Problemen – 
+            während KI-gestützte Automatisierung längst die Lösung bietet.
           </p>
         </motion.div>
 
