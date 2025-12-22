@@ -5,6 +5,7 @@ import ProblemSection from "@/components/ProblemSection";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
 import ProcessSection from "@/components/ProcessSection";
+import PricingSection from "@/components/PricingSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -13,13 +14,13 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>ConvertAI - KI-Agentur für E-Commerce Conversion Optimierung</title>
+        <title>AImprove - KI-Agentur für Amazon Seller | Automatisierung & Optimierung</title>
         <meta
           name="description"
-          content="Steigern Sie Ihre E-Commerce Conversion Rate um bis zu 40% mit KI-gestützter Optimierung. Kostenlose Shop-Analyse für Ihren Online-Shop."
+          content="Steigern Sie Ihre Amazon Performance mit KI-gestützter Automatisierung. Creative Production, Listing-Optimierung, PPC Intelligence und mehr für Amazon Seller."
         />
-        <meta name="keywords" content="KI Agentur, E-Commerce, Conversion Optimierung, Online Shop, A/B Testing, Personalisierung" />
-        <link rel="canonical" href="https://convertai.de" />
+        <meta name="keywords" content="KI Agentur, Amazon Seller, Amazon FBA, Listing Optimierung, PPC Automation, A+ Content, Amazon Advertising" />
+        <link rel="canonical" href="https://aimprove.de" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -30,6 +31,7 @@ const Index = () => {
           <ServicesSection />
           <StatsSection />
           <ProcessSection />
+          <PricingSection />
           <TestimonialsSection />
           <CTASection />
         </main>

@@ -26,7 +26,7 @@ const Navigation = () => {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-[hsl(210,100%,60%)] flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">AI</span>
             </div>
-            <span className="text-xl font-bold text-foreground">ConvertAI</span>
+            <span className="text-xl font-bold text-foreground">AImprove</span>
           </a>
 
           {/* Desktop Navigation */}

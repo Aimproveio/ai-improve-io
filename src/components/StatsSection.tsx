@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "40%", label: "Durchschnittliche Conversion-Steigerung" },
-  { value: "150+", label: "Erfolgreiche Projekte" },
-  { value: "€2.5M+", label: "Generierter Mehrumsatz" },
-  { value: "4.9/5", label: "Kundenbewertung" },
+  { value: "35%", label: "Durchschnittliche Umsatzsteigerung" },
+  { value: "100+", label: "Amazon Seller betreut" },
+  { value: "-40%", label: "Reduzierter ACoS" },
+  { value: "10x", label: "Schnellere Content-Produktion" },
 ];
 
 const StatsSection = () => {

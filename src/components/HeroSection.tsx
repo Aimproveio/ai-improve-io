@@ -33,7 +33,7 @@ const HeroSection = () => {
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">
-              KI-gestützte E-Commerce Optimierung
+              KI-Automatisierung für Amazon Seller
             </span>
           </motion.div>
 
@@ -44,9 +44,9 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Steigern Sie Ihre{" "}
-            <span className="gradient-text">Conversion Rate</span>{" "}
-            um bis zu 40%
+            Skalieren Sie Ihr{" "}
+            <span className="gradient-text">Amazon Business</span>{" "}
+            mit KI-Power
           </motion.h1>
 
           {/* Subheadline */}
@@ -56,8 +56,8 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            Wir nutzen modernste KI-Technologie, um Ihren E-Commerce Shop zu analysieren 
-            und datenbasierte Optimierungen durchzuführen, die nachweislich mehr Umsatz generieren.
+            Von Creative Production über Listing-Optimierung bis PPC Intelligence – 
+            wir automatisieren Ihr Amazon-Geschäft und maximieren Ihre Profitabilität.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -68,7 +68,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button variant="hero" size="xl" className="group">
-              Kostenlose Shop-Analyse
+              Kostenlose Potenzialanalyse
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="heroOutline" size="xl" className="group">
@@ -95,12 +95,12 @@ const HeroSection = () => {
                   </div>
                 ))}
               </div>
-              <span className="text-sm">150+ zufriedene Kunden</span>
+              <span className="text-sm">100+ Amazon Seller</span>
             </div>
             <div className="h-4 w-px bg-border hidden sm:block" />
             <div className="text-sm">⭐️ 4.9/5 Bewertung</div>
             <div className="h-4 w-px bg-border hidden sm:block" />
-            <div className="text-sm">🚀 Ø 32% mehr Umsatz</div>
+            <div className="text-sm">🚀 Ø 35% mehr Umsatz</div>
           </motion.div>
         </div>
       </div>
