@@ -5,59 +5,58 @@ import { Check, ArrowRight, Star } from "lucide-react";
 const tiers = [
   {
     name: "Core",
-    subtitle: "AI Growth Essentials",
-    price: "ab €500",
+    subtitle: "Einsteiger / Pflichtprodukt",
+    price: "€999",
     period: "/ Monat",
-    description: "Perfekt für Einsteiger – bessere Listings, sauberer Content, mehr Sichtbarkeit.",
+    skuInfo: "bis 20 SKUs",
+    description: "Perfekt für Einsteiger – alle Basics für Ihren Amazon-Erfolg.",
     features: [
       "Amazon Listing Automation",
-      "A+ Content Automation",
-      "Keyword Research & Clustering",
-      "Product Data Cleanup & SEO",
-      "Creative Starter Pack (5 Images + 1 Video)",
-      "Review Response Automation",
-      "Auto-Post Engine (Basic)",
+      "Amazon Store Aufbau",
+      "Alle 3 Monate gratis Produktrecherche",
+      "Alle 6 Monate gratis Marktrecherche",
+      "Tracking & Reporting",
+      "Kundensupport",
+      "Logistik & Beschaffung",
+      "Compliance-Management",
     ],
     cta: "Jetzt starten",
     popular: false,
   },
   {
     name: "Growth",
-    subtitle: "AI Performance Engine",
-    price: "ab €1.500",
+    subtitle: "Most Wanted / Standard",
+    price: "€2.499",
     period: "/ Monat",
-    description: "Für wachsende Seller – kontinuierliche Creative-Power und PPC-Effizienz.",
+    skuInfo: "bis 50 SKUs",
+    description: "Für wachsende Seller – erweiterte Features und PPC-Power.",
     features: [
       "Alles aus Core +",
-      "Product Image Suite (10-20 Creatives)",
-      "AI Video Ads (2-4 Videos / Monat)",
-      "UGC Simulation Pipeline",
-      "Creative Refresh Automation",
-      "Amazon PPC Intelligence Reports",
-      "Cross-Channel Performance Dashboard",
-      "Customer Support Automation",
-      "Return/Warranty Auto-Handling",
-      "Monthly AI Growth Report",
+      "PPC Management (bis 5 Setups)",
+      "1 Produktrecherche inklusive",
+      "1 Compliance-Anfrage inklusive",
+      "Alle 3 Monate gratis Produktrecherche",
+      "Alle 6 Monate gratis Marktrecherche",
+      "4h Custom AI für Ihr Unternehmen",
     ],
     cta: "Jetzt skalieren",
     popular: true,
   },
   {
     name: "Elite",
-    subtitle: "AI Scale Operating System",
-    price: "ab €4.000",
+    subtitle: "Premium / Skalierer",
+    price: "€6.999",
     period: "/ Monat",
-    description: "Für Skalierer – vollautomatisierte KI-Engine für maximales Wachstum.",
+    skuInfo: "Unbegrenzte SKUs",
+    description: "Für Skalierer – maximale Power und Premium-Support.",
     features: [
-      "Alles aus Growth +",
-      "Creative Operating System (Endlos-Creatives)",
-      "Full Amazon Intelligence Suite",
-      "Product Launch Forecast",
-      "Offer & Funnel Optimization",
-      "Influencer/UGC Briefing Automation",
-      "Multi-Channel Growth Strategy",
-      "Custom GPT / Agent-System",
-      "Orchestrator-, Creative- & Support-Agent",
+      "Alles aus Core + Growth +",
+      "PPC Management (bis 20 Setups)",
+      "3 Produktrecherchen inklusive",
+      "5 Compliance-Anfragen inklusive",
+      "Alle 3 Monate gratis Listing",
+      "Alle 6 Monate gratis Marktrecherche",
+      "8h Custom AI für Ihr Unternehmen",
     ],
     cta: "Kontakt aufnehmen",
     popular: false,
@@ -95,9 +94,9 @@ const PricingSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative p-8 rounded-3xl border ${
+              className={`relative p-8 rounded-3xl border flex flex-col ${
                 tier.popular 
-                  ? "bg-gradient-to-b from-primary/10 to-card border-primary/50" 
+                  ? "bg-gradient-to-b from-primary/10 to-card border-primary/50 lg:scale-105 lg:z-10" 
                   : "bg-card border-border"
               } hover:border-primary/50 transition-all duration-300`}
             >
@@ -115,16 +114,17 @@ const PricingSection = () => {
                 <p className="text-sm text-muted-foreground">{tier.subtitle}</p>
               </div>
 
-              <div className="mb-6">
+              <div className="mb-2">
                 <span className="text-4xl font-bold">{tier.price}</span>
                 <span className="text-muted-foreground">{tier.period}</span>
               </div>
+              <p className="text-xs text-primary font-medium mb-6">{tier.skuInfo}</p>
 
               <p className="text-muted-foreground text-sm mb-8">
                 {tier.description}
               </p>
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-grow">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -135,7 +135,7 @@ const PricingSection = () => {
 
               <Button 
                 variant={tier.popular ? "hero" : "heroOutline"} 
-                className="w-full group"
+                className="w-full group mt-auto"
               >
                 {tier.cta}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -150,7 +150,7 @@ const PricingSection = () => {
           viewport={{ once: true }}
           className="text-center text-muted-foreground text-sm mt-12"
         >
-          Alle Preise zzgl. MwSt. • Individuelle Pakete auf Anfrage möglich
+          Alle Preise zzgl. MwSt. • Mindestlaufzeit 2 Monate • Individuelle Pakete auf Anfrage
         </motion.p>
       </div>
     </section>
