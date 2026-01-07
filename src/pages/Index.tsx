@@ -5,11 +5,11 @@ import ProblemSection from "@/components/ProblemSection";
 import ServicesSection from "@/components/ServicesSection";
 import StatsSection from "@/components/StatsSection";
 import ProcessSection from "@/components/ProcessSection";
+import PartnerBanner from "@/components/PartnerBanner";
 import PricingSection from "@/components/PricingSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
-
 const Index = () => {
   return (
     <>
@@ -31,6 +31,7 @@ const Index = () => {
           <ServicesSection />
           <StatsSection />
           <ProcessSection />
+          <PartnerBanner />
           <PricingSection />
           <TestimonialsSection />
           <CTASection />
