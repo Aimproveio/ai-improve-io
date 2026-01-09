@@ -92,13 +92,14 @@ const PricingSection = () => {
               key={tier.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -12 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative p-8 rounded-3xl border flex flex-col ${
+              className={`relative p-8 rounded-3xl border flex flex-col transition-all duration-300 ${
                 tier.popular 
-                  ? "bg-gradient-to-b from-primary/10 to-card border-primary/50 lg:scale-105 lg:z-10" 
-                  : "bg-card border-border"
-              } hover:border-primary/50 transition-all duration-300`}
+                  ? "bg-gradient-to-b from-primary/10 to-card border-primary/50 lg:scale-105 lg:z-10 hover:border-white/70 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]" 
+                  : "bg-card border-border hover:border-primary/50 hover:bg-gradient-to-b hover:from-primary/10 hover:to-card"
+              }`}
             >
               {tier.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
