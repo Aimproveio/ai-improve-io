@@ -111,7 +111,7 @@ const Footer = () => {
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary mt-1" />
                 <span>
-                  SAM Enterprise UG (Haftungsbeschränkt)<br />
+                  SAM Enterprise UG (haftungsbeschränkt)<br />
                   Osningstraße 25<br />
                   33605 Bielefeld
                 </span>
