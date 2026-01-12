@@ -52,10 +52,12 @@ const CTASection = () => {
                 ))}
               </div>
 
-              <Button variant="hero" size="xl" className="group">
-                Jetzt kostenlose Analyse starten
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="xl" className="group">
+                  Jetzt kostenlose Analyse starten
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
 
               <p className="mt-6 text-xs text-muted-foreground">
                 Keine Verpflichtungen • Antwort innerhalb von 24 Stunden

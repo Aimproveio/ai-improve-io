@@ -2,13 +2,17 @@ import { motion } from "framer-motion";
 
 const partners = [
   "Massagewerk",
-  "Echo Impact",
-  "Digital Roar",
-  "SA Ventures GmbH",
-  "NordBrand",
-  "Elevate Commerce",
-  "Prime Sellers Co.",
-  "Apex Trade",
+  "VitalHarvest",
+  "Naturruf",
+  "Schläferstündchen",
+  "HorizonSports",
+  "Streyda",
+  "Fierce Fire & Ice",
+  "Strawnga",
+  "BlackC",
+  "Klangfeiler",
+  "leBrüke",
+  "ZrilubKrelz",
 ];
 
 const PartnerBanner = () => {
@@ -33,7 +37,7 @@ const PartnerBanner = () => {
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 20,
+              duration: 25,
               ease: "linear",
             },
           }}

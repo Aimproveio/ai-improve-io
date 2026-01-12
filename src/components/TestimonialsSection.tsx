@@ -9,14 +9,14 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: "Lisa Bergmann",
-    role: "E-Commerce Managerin, SportBrand",
+    name: "Jean Philipp Dietz",
+    role: "Amazon FBA Seller, Multi 7-stellig",
     content: "Die PPC Intelligence Reports haben uns geholfen, unseren ACoS um 40% zu senken. Endlich verstehen wir, wo unser Budget wirklich hingeht.",
     rating: 5,
   },
   {
-    name: "Thomas Keller",
-    role: "Gründer, HomeEssentials",
+    name: "Aleksandar Duric",
+    role: "Co-Founder von Naturruf",
     content: "Die UGC Simulation Pipeline ist ein Gamechanger. Wir haben jetzt unbegrenzt authentische Video-Testimonials ohne Influencer-Kosten.",
     rating: 5,
   },
@@ -24,7 +24,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-24 relative bg-secondary/30">
+    <section id="testimonials" className="py-24 relative bg-secondary/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
