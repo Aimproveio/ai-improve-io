@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import aimprovelogo from "@/assets/aimprove-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navigation = () => {
   const navItems = [
     { label: "Services", href: "#services" },
     { label: "Prozess", href: "#process" },
-    { label: "Ergebnisse", href: "#results" },
+    { label: "Ergebnisse", href: "#testimonials" },
     { label: "Kontakt", href: "#contact" },
   ];
 
@@ -23,9 +24,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-[hsl(210,100%,60%)] flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">AI</span>
-            </div>
+            <img src={aimprovelogo} alt="AImprove Logo" className="w-8 h-8 object-contain" />
             <span className="text-xl font-bold text-foreground">AImprove</span>
           </a>
 
@@ -43,9 +42,11 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button variant="hero" size="default">
-              Kostenlose Analyse
-            </Button>
+            <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="default">
+                Kostenlose Analyse
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,9 +77,11 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="mt-2">
-                Kostenlose Analyse
-              </Button>
+              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="default" className="mt-2 w-full">
+                  Kostenlose Analyse
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}

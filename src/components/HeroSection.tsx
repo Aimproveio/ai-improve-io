@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Sparkles, Brain, Zap, TrendingUp, BarChart3 } from "lucide-react";
+import { ArrowRight, Sparkles, Brain, Zap, TrendingUp, BarChart3 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const TypeWriter = ({ words, className }: { words: string[]; className?: string }) => {
@@ -226,72 +226,26 @@ const HeroSection = () => {
             wir automatisieren Ihr Amazon-Geschäft und maximieren Ihre Profitabilität.
           </motion.p>
 
-          {/* CTA Buttons with enhanced hover */}
+          {/* CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex justify-center"
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button variant="hero" size="xl" className="group relative overflow-hidden">
-                <motion.span
-                  className="absolute inset-0 bg-white/20"
-                  initial={{ x: "-100%", skewX: -15 }}
-                  whileHover={{ x: "100%" }}
-                  transition={{ duration: 0.5 }}
-                />
-                Kostenlose Potenzialanalyse
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button variant="heroOutline" size="xl" className="group">
-                <Play className="w-5 h-5" />
-                Video ansehen
-              </Button>
-            </motion.div>
-          </motion.div>
-
-          {/* Animated Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-16 flex flex-wrap items-center justify-center gap-8 text-muted-foreground"
-          >
-            <motion.div 
-              className="flex items-center gap-2"
-              whileHover={{ scale: 1.05 }}
-            >
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.6 + i * 0.1 }}
-                    className="w-8 h-8 rounded-full bg-secondary border-2 border-background flex items-center justify-center text-xs font-medium"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </motion.div>
-                ))}
-              </div>
-              <span className="text-sm">100+ Amazon Seller</span>
-            </motion.div>
-            <div className="h-4 w-px bg-border hidden sm:block" />
-            <motion.div 
-              className="text-sm"
-              whileHover={{ scale: 1.05 }}
-            >
-              ⭐️ 4.9/5 Bewertung
-            </motion.div>
-            <div className="h-4 w-px bg-border hidden sm:block" />
-            <motion.div 
-              className="text-sm"
-              whileHover={{ scale: 1.05 }}
-            >
-              🚀 Ø 35% mehr Umsatz
+              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="xl" className="group relative overflow-hidden">
+                  <motion.span
+                    className="absolute inset-0 bg-white/20"
+                    initial={{ x: "-100%", skewX: -15 }}
+                    whileHover={{ x: "100%" }}
+                    transition={{ duration: 0.5 }}
+                  />
+                  Kostenlose Potenzialanalyse
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </motion.div>
           </motion.div>
         </motion.div>

@@ -134,13 +134,15 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button 
-                variant={tier.popular ? "hero" : "heroOutline"} 
-                className="w-full group mt-auto"
-              >
-                {tier.cta}
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+                <Button 
+                  variant={tier.popular ? "hero" : "heroOutline"} 
+                  className="w-full group"
+                >
+                  {tier.cta}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </motion.div>
           ))}
         </div>
