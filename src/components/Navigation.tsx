@@ -24,7 +24,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="flex items-center gap-2">
-            <img src={aimprovelogo} alt="AImprove Logo" className="w-8 h-8 object-contain" />
+            <img src={aimprovelogo} alt="AImprove Logo" className="w-12 h-12 md:w-14 md:h-14 object-contain" />
             <span className="text-xl font-bold text-foreground">AImprove</span>
           </a>
 
