@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src={aimprovelogo} alt="AImprove Logo" className="w-10 h-10 object-contain" />
+              <img src={aimprovelogo} alt="AImprove Logo" className="w-14 h-14 object-contain" />
               <span className="text-xl font-bold">AImprove</span>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
