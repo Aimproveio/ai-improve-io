@@ -14,13 +14,24 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>AImprove - KI-Agentur für Amazon Seller | Automatisierung & Optimierung</title>
+        <title>AI Improve – KI Automatisierung für effizientes Wachstum</title>
         <meta
           name="description"
-          content="Steigern Sie Ihre Amazon Performance mit KI-gestützter Automatisierung. Creative Production, Listing-Optimierung, PPC Intelligence und mehr für Amazon Seller."
+          content="Automatisieren, skalieren, Zeit sparen – KI-Lösungen, die Unternehmen messbar effizienter machen."
         />
-        <meta name="keywords" content="KI Agentur, Amazon Seller, Amazon FBA, Listing Optimierung, PPC Automation, A+ Content, Amazon Advertising" />
-        <link rel="canonical" href="https://aimprove.de" />
+        <meta name="keywords" content="KI Automatisierung, Künstliche Intelligenz, Effizienz, Skalierung, Unternehmenswachstum, AI Solutions" />
+        <link rel="canonical" href="https://ai-improve.io" />
+        
+        {/* Open Graph */}
+        <meta property="og:url" content="https://ai-improve.io" />
+        <meta property="og:title" content="AI Improve – KI Automatisierung für effizientes Wachstum" />
+        <meta property="og:description" content="Automatisieren, skalieren, Zeit sparen – KI-Lösungen, die Unternehmen messbar effizienter machen." />
+        <meta property="og:image" content="https://ai-improve.io/og-image.png" />
+        
+        {/* Twitter */}
+        <meta name="twitter:title" content="AI Improve – KI Automatisierung für effizientes Wachstum" />
+        <meta name="twitter:description" content="Automatisieren, skalieren, Zeit sparen – KI-Lösungen, die Unternehmen messbar effizienter machen." />
+        <meta name="twitter:image" content="https://ai-improve.io/og-image.png" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
