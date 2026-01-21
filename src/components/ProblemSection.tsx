@@ -1,5 +1,7 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { AlertTriangle, TrendingDown, Clock, DollarSign } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useRef } from "react";
 
 const problems = [
   {
@@ -25,6 +27,10 @@ const problems = [
 ];
 
 const ProblemSection = () => {
+  const isMobile = useIsMobile();
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
   return (
     <section className="py-24 relative">
       <div className="container mx-auto px-4">
@@ -47,14 +53,19 @@ const ProblemSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div ref={sectionRef} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((problem, index) => (
             <motion.div
               key={problem.title}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, delay: index * 0.08 }}
+              initial={{ opacity: 0, y: isMobile ? 0 : 20 }}
+              animate={isMobile && isInView ? { opacity: 1, y: 0 } : undefined}
+              whileInView={!isMobile ? { opacity: 1, y: 0 } : undefined}
+              viewport={!isMobile ? { once: true } : undefined}
+              transition={{ 
+                duration: isMobile ? 0.6 : 0.5, 
+                delay: index * (isMobile ? 0.15 : 0.1),
+                ease: "easeOut"
+              }}
               className="group p-6 rounded-2xl bg-card border border-border hover:border-destructive/50 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors">

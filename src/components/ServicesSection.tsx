@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { 
   Image, 
   Video, 
@@ -9,6 +9,8 @@ import {
   Package,
   Shield
 } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useRef } from "react";
 
 const services = [
   {
@@ -62,6 +64,10 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const isMobile = useIsMobile();
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
   return (
     <section id="services" className="py-24 relative bg-secondary/30">
       <div className="container mx-auto px-4">
@@ -85,21 +91,26 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div ref={sectionRef} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden"
+              initial={{ opacity: 0, y: isMobile ? 0 : 20 }}
+              animate={isMobile && isInView ? { opacity: 1, y: 0 } : undefined}
+              whileInView={!isMobile ? { opacity: 1, y: 0 } : undefined}
+              viewport={!isMobile ? { once: true } : undefined}
+              transition={{ 
+                duration: isMobile ? 0.6 : 0.5, 
+                delay: index * (isMobile ? 0.12 : 0.1),
+                ease: "easeOut"
+              }}
+              className="group relative p-6 rounded-2xl bg-card border border-border md:hover:border-primary/50 transition-all duration-300 overflow-hidden"
             >
               {/* Hover Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="relative z-10">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-4 md:group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{service.title}</h3>

@@ -1,5 +1,7 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useRef } from "react";
 
 const testimonials = [
   {
@@ -23,6 +25,10 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const isMobile = useIsMobile();
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
   return (
     <section id="testimonials" className="py-24 relative bg-secondary/30">
       <div className="container mx-auto px-4">
@@ -41,15 +47,20 @@ const TestimonialsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div ref={sectionRef} className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, delay: index * 0.08 }}
-              className="relative p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300"
+              initial={{ opacity: 0, y: isMobile ? 0 : 20 }}
+              animate={isMobile && isInView ? { opacity: 1, y: 0 } : undefined}
+              whileInView={!isMobile ? { opacity: 1, y: 0 } : undefined}
+              viewport={!isMobile ? { once: true } : undefined}
+              transition={{ 
+                duration: isMobile ? 0.6 : 0.5, 
+                delay: index * (isMobile ? 0.2 : 0.1),
+                ease: "easeOut"
+              }}
+              className="relative p-8 rounded-2xl bg-card border border-border md:hover:border-primary/30 transition-all duration-300"
             >
               <Quote className="w-10 h-10 text-primary/20 mb-4" />
               <p className="text-foreground mb-6 leading-relaxed">
