@@ -90,11 +90,11 @@ const PricingSection = () => {
           {tiers.map((tier, index) => (
             <motion.div
               key={tier.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               whileHover={{ y: -12 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
               className={`relative p-8 rounded-3xl border flex flex-col transition-all duration-300 ${
                 tier.popular 
                   ? "bg-gradient-to-b from-primary/10 to-card border-primary/50 lg:scale-105 lg:z-10 hover:border-white/70 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]" 
