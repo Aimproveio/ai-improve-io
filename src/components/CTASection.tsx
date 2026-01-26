@@ -52,7 +52,7 @@ const CTASection = () => {
                 ))}
               </div>
 
-              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <a href="https://calendly.com/ai-improve/strategy-call" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button variant="hero" size="xl" className="group w-full sm:w-auto text-sm sm:text-base px-4 sm:px-8">
                   Jetzt kostenlose Analyse starten
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
