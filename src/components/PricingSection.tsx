@@ -145,7 +145,7 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
+              <a href="https://calendly.com/ai-improve/strategy-call" target="_blank" rel="noopener noreferrer" className="w-full mt-auto">
                 <Button 
                   variant={tier.popular ? "hero" : "heroOutline"} 
                   className="w-full group"

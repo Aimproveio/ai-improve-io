@@ -42,7 +42,7 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/ai-improve/strategy-call" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="default">
                 Kostenlose Analyse
               </Button>
@@ -77,7 +77,7 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/ai-improve/strategy-call" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="default" className="mt-2 w-full">
                   Kostenlose Analyse
                 </Button>

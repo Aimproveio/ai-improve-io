@@ -234,7 +234,7 @@ const HeroSection = () => {
             className="flex justify-center"
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <a href="https://calendly.com/info-41147/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/ai-improve/strategy-call" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl" className="group relative overflow-hidden">
                   <motion.span
                     className="absolute inset-0 bg-white/20"
