@@ -73,24 +73,6 @@ const PricingSection = () => {
   return (
     <section id="pricing" className="py-24 relative">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <span className="text-primary text-sm font-semibold uppercase tracking-wider mb-4 block">
-            Pakete & Preise
-          </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Wählen Sie Ihr{" "}
-            <span className="gradient-text">Wachstumspaket</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Vom Einsteiger bis zum Skalierer – für jede Wachstumsphase das passende Paket.
-          </p>
-        </motion.div>
 
         <div ref={sectionRef} className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto items-start">
           {tiers.map((tier, index) => (
