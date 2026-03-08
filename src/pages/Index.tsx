@@ -42,7 +42,7 @@ const Index = () => {
           <ServicesSection />
           <ProcessSection />
           <PartnerBanner />
-          <PricingSection />
+          
           <TestimonialsSection />
           <CTASection />
         </main>
