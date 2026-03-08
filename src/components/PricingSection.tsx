@@ -140,14 +140,6 @@ const PricingSection = () => {
           ))}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-muted-foreground text-sm mt-12"
-        >
-          Alle Preise zzgl. MwSt. • Mindestlaufzeit 2 Monate • Individuelle Pakete auf Anfrage
-        </motion.p>
       </div>
     </section>
   );
